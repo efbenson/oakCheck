@@ -1,0 +1,27 @@
+{
+  "name": "oakCheck",
+  "version": "1.0.0",
+  "description": "Complex rule validation of json data",
+  "main": "lib/processor.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/efbenson/oakCheck.git"
+  },
+  "keywords": [
+    "rule",
+    "validation"
+  ],
+  "author": "efbenson@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/efbenson/oakCheck/issues"
+  },
+  "homepage": "https://github.com/efbenson/oakCheck",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  }
+}
