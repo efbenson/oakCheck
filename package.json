@@ -1,5 +1,5 @@
 {
-  "name": "oakCheck",
+  "name": "oak-check",
   "version": "2.0.0",
   "description": "Complex rule validation of json data",
   "main": "lib/processor.js",
