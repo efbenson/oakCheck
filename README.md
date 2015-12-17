@@ -18,6 +18,7 @@ oak check allows you to run "queries" against a json object in order to validate
 ## Examples
 
 ### Simple
+```javascript
 	var data = {'johnny': 5},
 		condition = {'$eq' : {'johnny' : 5}};
 
@@ -28,9 +29,11 @@ oak check allows you to run "queries" against a json object in order to validate
 			console.log('johnny 5 is dead');
 		}
 	});
-	
+```
+
 ### Deep
 
+```javascript
 	var data = {robots : {'johnny': 5}},
 		condition = {'$eq' : {'robots.johnny' : 5}};
 
@@ -41,9 +44,11 @@ oak check allows you to run "queries" against a json object in order to validate
 			console.log('johnny 5 is dead');
 		}
 	});
+```
 	
 ### Logical
 
+```javascript
 	var data = {'johnny': 6},
 		condition = {'$or' :
 				[
@@ -58,10 +63,12 @@ oak check allows you to run "queries" against a json object in order to validate
 			console.log('nothing to see here');
 		}
 	});
+```
 	
 ### Custom Operators
 You can pass in custom operator functions to do evaluation on data.  
 
+```javascript
 	var data = {'johnny': 6},
 		condition = {'$or' :
 				[
@@ -83,3 +90,4 @@ You can pass in custom operator functions to do evaluation on data.
 			done('failed should have passed');
 		}
 	});
+```
